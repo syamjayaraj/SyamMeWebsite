@@ -13,26 +13,58 @@ function Card() {
         </h2>
         <div className="about">
           <p className="mb-0">
-            I noticed that entrepreneurs were searching for help in building a
-            brand and business owners were striving to market their products.
-            They have needed some digital solutions to solve these problems
-            and&nbsp;
-            <a href="https://floyet.com">Floyet</a> - a digital branding company
-            was established by me in May 2020 to help them.
+            I am a software engineer and Internet entrepreneur who lives in
+            Parambath, Kozhikode with my family.
           </p>
           <div style={{ display: more ? "block" : "none" }}>
             <p className="mt-4">
-              Prior to Floyet, I served for a software service company for a few
-              months. After a year of planning in May 2018, co-founded&nbsp;
-              <a href="https://storylens.io">Storylens</a> - a blog building
-              platform.
+              I completed my Btech graduation from&nbsp;
+              <a href="http://awhengg.org">AWH Engineering College</a>,
+              Kuttikkattoor. Worked for a software service company for a few
+              months. Build a strong base in Laravel, PHP, and familiar with the
+              operation of a company.
+            </p>
+
+            <p className="mt-4">
+              <a href="https://www.techomoro.com">Techomoro</a> a
+              technology/programming blog was started on May 1st, 2018 to help
+              beginners in the programming industry.
+            </p>
+
+            <p className="mt-4">
+              In May 2018, I co-founded&nbsp;
+              <a href="https://redmonark.com">Redmonark</a> with&nbsp;
+              <a href="https://twitter.com/blizzerand">Manjunath</a>. He had a
+              great knowledge of content marketing and blogging and his idea was
+              to build a content sharing platform like&nbsp;
+              <a href="https://medium.com">Medium</a>.
             </p>
             <p className="mt-4">
-              I'm a Btech graduate in Computer Science and Engineering
+              I learned the latest programming technologies React, Express, and
+              MongoDB to code the product. So from PHP, I completely migrated to
+              the JavaScript environment.
+            </p>
+            <p className="mt-4">
+              After building a basic model, we analyzed the opportunity of blog
+              builders and polished the product to the most simplistic blog
+              builder. That was the beginning of&nbsp;
+              <a href="https://storylens.io">Storylens.io</a>.
+            </p>
+            <p className="mt-4">
+              On 22nd January 2020,&nbsp;
+              <a href="https://redmonark.com">Redmonark</a> released the first
+              product &nbsp;<a href="https://storylens.io">Storylens.io</a>{" "}
+              included with a robust drag and drop website builder.
+            </p>
+            <p className="mt-4">
+              In May 2020, I started&nbsp;
+              <a href="https://floyet.com">Floyet</a>, a digital branding
+              company that supports small businesses and entrepreneur minded
+              individuals to achieve heights.
             </p>
           </div>
           <div style={{ display: more ? "none" : "block" }}>
-            <a class="  small more" onClick={() => setMore(true)}>
+            <a class="more" onClick={() => setMore(true)}>
               More
             </a>
           </div>
@@ -104,7 +136,7 @@ function Card() {
       </div>
       <div class="footer-section">
         <p>
-          Made with Love in God's own country | Powered by &nbsp;
+          Made with Love in God's own country | Powered by&nbsp;
           <a href="https://floyet.com">Floyet</a>
         </p>
         <p>
