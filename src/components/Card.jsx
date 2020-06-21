@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import { fadeIn } from "react-animations";
+import Radium, { StyleRoot } from "radium";
 
 function Card() {
   const [more, setMore] = useState(false);
+
+  const styles = {
+    fadeIn: {
+      animation: "x 1s",
+      animationName: Radium.keyframes(fadeIn, "fadeIn"),
+    },
+  };
 
   return (
     <div className="profile">
@@ -64,10 +73,16 @@ function Card() {
             </p>
           </div>
           <div style={{ display: more ? "none" : "block" }}>
-            <a class="more" onClick={() => setMore(true)}>
-              More
-              <i class="fas fa-arrow-right"></i>
-            </a>
+            <StyleRoot>
+              <a
+                class="more"
+                onClick={() => setMore(true)}
+                style={styles.fadeIn}
+              >
+                More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </StyleRoot>
           </div>
         </div>
       </div>
