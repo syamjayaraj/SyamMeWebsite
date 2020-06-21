@@ -21,7 +21,7 @@ function Card() {
               I completed my Btech graduation from&nbsp;
               <a href="http://awhengg.org">AWH Engineering College</a>,
               Kuttikkattoor. Worked for a software service company for a few
-              months. Build a strong base in Laravel, PHP, and familiar with the
+              months. Built a strong base in Laravel, PHP, and familiar with the
               operation of a company.
             </p>
 
@@ -66,6 +66,7 @@ function Card() {
           <div style={{ display: more ? "none" : "block" }}>
             <a class="more" onClick={() => setMore(true)}>
               More
+              <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
@@ -80,8 +81,12 @@ function Card() {
           </div>
           <div className="col col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="item skype">
-              <i class="fab fa-skype"></i>
-              <a href="skype:+919496342650?call">syamjayaraj</a>
+              <i class="fab fa-whatsapp"></i>
+              <a
+                href={`https://api.whatsapp.com/send?phone=917306585662&text=Hi, I am contacting you Through your website.%0A%0A`}
+              >
+                Message
+              </a>
             </div>
           </div>
           <div className="col col-lg-4 col-md-4 col-sm-4 col-12">
@@ -103,6 +108,15 @@ function Card() {
               class="btn-sm btn-default btn-lg"
             >
               <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://instagram.com/syamjayaraj"
+              target="_blank"
+              class="btn-sm btn-default btn-lg"
+            >
+              <i class="fab fa-instagram"></i>
             </a>
           </li>
           <li class="list-inline-item">
