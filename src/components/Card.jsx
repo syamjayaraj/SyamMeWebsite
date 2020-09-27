@@ -23,7 +23,7 @@ function Card() {
         <div className="about">
           <p className="mb-0">
             I am a software engineer and Internet entrepreneur who lives in
-            Parambath, Kozhikode with my family.
+            Parambath, Kozhikode.
           </p>
           <div style={{ display: more ? "block" : "none" }}>
             <p className="mt-4">
@@ -98,7 +98,7 @@ function Card() {
             <div class="item skype">
               <i class="fab fa-whatsapp"></i>
               <a
-                href={`https://api.whatsapp.com/send?phone=917306585662&text=Hi, I am contacting you Through your website.%0A%0A`}
+                href={`https://api.whatsapp.com/send?phone=919946792650&text=Hi, I am contacting you Through your website.%0A%0A`}
               >
                 Message
               </a>
@@ -107,7 +107,7 @@ function Card() {
           <div className="col col-lg-4 col-md-4 col-sm-4 col-12">
             <div class="item phone">
               <i class="fas fa-phone"></i>
-              <a href="tel:+91-7306585662">+91-7306585662</a>
+              <a href="tel:+91-7306585662">+91-9946792650</a>
             </div>
           </div>
         </div>
