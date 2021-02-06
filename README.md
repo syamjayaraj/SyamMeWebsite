@@ -6,10 +6,10 @@ This is the source code of my personal website [Syam.me](https://syam.me). You c
 
 After [successfull installation of Node.js](https://nodejs.org/en/download/) in your system, clone this project, install packages, and start.
 
-`git clone https://github.com/syamjayaraj/SyamMeWebsite.git`
-`cd SyamMeWebsitenpm`
-`npm i`
-`npm start`
+######`git clone https://github.com/syamjayaraj/SyamMeWebsite.git`
+######`cd SyamMeWebsitenpm`
+######`npm i`
+######`npm start`
 
 
 Now, using a code editor, you can change the profile details in `Card.jsx` component. Do not forget to change meta informations in `index.html` file.
