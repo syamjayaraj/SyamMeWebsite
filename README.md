@@ -1,6 +1,6 @@
 ## Simple personal website in React.js
 
-This is the source code of my personal website [Syam.me]](https://syam.me).
+This is the source code of my personal website [Syam.me](https://syam.me).
 
 ## How can you use this to make your own personal website?
 
