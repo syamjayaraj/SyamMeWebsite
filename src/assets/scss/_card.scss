@@ -3,6 +3,30 @@
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  .mirage-link {
+    position: absolute;
+    right: 2.5rem;
+    font-size: 1.2em;
+    font-weight: 200;
+
+    background: linear-gradient(
+      to bottom,
+      var(--mainColor) 0%,
+      var(--mainColor) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2322569f' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+      background-position: 0 100%;
+      background-size: auto 6px;
+      background-repeat: repeat-x;
+      text-decoration: none;
+    }
+  }
   .card-img-left {
     width: 45%;
     background: scroll center url("/assets/images/blue-mountain.png");
@@ -22,7 +46,7 @@
     }
     .position {
       font-weight: 300;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
     .about {
       margin-top: 2rem;

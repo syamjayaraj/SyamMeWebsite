@@ -14,11 +14,16 @@ function Card() {
 
   return (
     <div className="profile">
+      <a className="mirage-link" href="https://mirage.syam.me">
+        Mirage
+      </a>
       <div class="profile-section">
         <img src="/assets/images/syamlal-image.jpg" className="profile-image" />
         <h1 class="name">Syamlal CM</h1>
         <h2 className="position">
           Founder & CEO at <a href="https://floyet.com">Floyet</a>
+          <br />
+          MERN stack developer • Blogger • Writer
         </h2>
         <div className="about">
           <p className="mb-0">
@@ -94,20 +99,20 @@ function Card() {
               <a href="mailto:hi@syam.me">hi@syam.me</a>
             </div>
           </div>
-          <div className="col col-lg-4 col-md-4 col-sm-4 col-12">
+          <div className="col col-lg-3 col-md-4 col-sm-3 col-12">
             <div class="item skype">
               <i class="fab fa-whatsapp"></i>
               <a
-                href={`https://api.whatsapp.com/send?phone=919946792650&text=Hi, I am contacting you Through your website.%0A%0A`}
+                href={`https://api.whatsapp.com/send?phone=919946792650&text=Hi, I am contacting you through your website.%0A%0A`}
               >
                 Message
               </a>
             </div>
           </div>
-          <div className="col col-lg-4 col-md-4 col-sm-4 col-12">
+          <div className="col col-lg-5 col-md-4 col-sm-5 col-12">
             <div class="item phone">
               <i class="fas fa-phone"></i>
-              <a href="tel:+91-7306585662">+91-9946792650</a>
+              <a href="tel:+91-9946792650">+91-9946792650</a>
             </div>
           </div>
         </div>
