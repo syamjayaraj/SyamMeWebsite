@@ -1,17 +1,34 @@
-## Simple personal website in React.js
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is the source code of my personal website [Syam.me](https://syam.me). You can easily clone this project, edit the profile data and make live. So that, you will get a simple personal website in few minutes.
+## Getting Started
 
-## How can you use this to make your own personal website?
+First, run the development server:
 
-After [successfull installation of Node.js](https://nodejs.org/en/download/) in your system, clone this project, install packages, and start.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-###### `git clone https://github.com/syamjayaraj/SyamMeWebsite.git`
-###### `cd SyamMeWebsitenpm`
-###### `npm i`
-###### `npm start`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-Now, using a code editor, you can change the profile details in `Card.jsx` component. Do not forget to change meta informations in `index.html` file.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-After editing the informations, refer the article [How To Build A Simple Website With React And Host It Using Firebase](https://www.techomoro.com/how-to-build-a-simple-website-with-react-and-host-it-using-firebase/) to make the website live for free.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
