@@ -1,45 +1,73 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useEffect, useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function Header(props) {
-    let {clientWindowHeight} =props;
+  let { clientWindowHeight } = props;
+  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  const [padding, setPadding] = useState(30);
+  const [boxShadow, setBoxShadow] = useState(0);
 
-    console.log(clientWindowHeight)
-    return(
-        <header id="masthead" class="site-header" style = {{
-            background: "rgba(255, 255, 255, 0.28)",
-            padding: "24.4487px 0px",
-            boxShadow: "rgb(0 0 0 / 6%) 0px 0px 20px 6px"
-        }}>
-        <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
+  useEffect(() => {
+    console.log(backgroundTransparacy);
+    let backgroundTransparacyVar = clientWindowHeight / 600;
 
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    {/* <a href="#hero" class="site-logo"><img src="assets/img/logo.png" alt="logo" /></a> */}
+    if (backgroundTransparacyVar < 1) {
+      let paddingVar = 30 - backgroundTransparacyVar * 20;
+      let boxShadowVar = backgroundTransparacyVar * 0.1;
+      setBackgroundTransparacy(backgroundTransparacyVar);
+      setPadding(paddingVar);
+      setBoxShadow(boxShadowVar);
+    }
+  }, [clientWindowHeight]);
 
-                </div>
+  return (
+    <header
+      id="masthead"
+      className="site-header"
+      style={{
+        background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
+        padding: `${padding}px 0px`,
+        boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+      }}
+    >
+      <nav id="primary-navigation" className="site-navigation">
+        <div className="container">
+          <div className="navbar-header page-scroll">
+            <button
+              type="button"
+              className="navbar-toggle collapsed"
+              data-target="#portfolio-perfect-collapse"
+              aria-expanded="false"
+            >
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
 
-                <div class="main-menu" id="portfolio-perfect-collapse">
+            {/* <a href="#hero" className="site-logo"><img src="assets/img/logo.png" alt="logo" /></a> */}
+          </div>
 
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><AnchorLink href="#hero">Home</AnchorLink></li>
-                        <li class="page-scroll"><AnchorLink href="#about">About</AnchorLink></li>
-                        <li class="page-scroll"><AnchorLink href="#service">Service</AnchorLink></li>
-                        <li class="page-scroll"><AnchorLink href="#portfolio">Portfolio</AnchorLink></li>
-                        <li class="page-scroll"><AnchorLink href="#contact">Contact</AnchorLink></li>
-                        
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
+          <div className="main-menu" id="portfolio-perfect-collapse">
+            <ul className="nav navbar-nav navbar-right">
+              <li className="page-scroll">
+                <AnchorLink href="#hero">Home</AnchorLink>
+              </li>
+              <li className="page-scroll">
+                <AnchorLink href="#about">About</AnchorLink>
+              </li>
+              <li className="page-scroll">
+                <AnchorLink href="#service">Service</AnchorLink>
+              </li>
+              <li className="page-scroll">
+                <AnchorLink href="#portfolio">Portfolio</AnchorLink>
+              </li>
+              <li className="page-scroll">
+                <AnchorLink href="#contact">Contact</AnchorLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    )
+  );
 }

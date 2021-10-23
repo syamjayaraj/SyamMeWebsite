@@ -1,25 +1,34 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 export default function Hero() {
-    return(
-        <div id="hero" class="hero">
-        <div class="container">
-            <div class="row">
+  return (
+    <div id="hero" className="hero">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <h1>Syamlal CM</h1>
+            <div className="page-scroll">
+              <p className="job-title">
+                Founder & CEO at Floyet Technologies <br />• Full stack
+                developer • Blogger • Writer
+              </p>
 
-                <div class="col-md-6">
-                    <h1>Syamlal CM</h1>
-                    <div class="page-scroll">
-                        <p class="job-title">Founder & CEO at Floyet • Full stack developer • Blogger • Writer</p>
-                        <a href="#contact" class="btn btn-fill ">Hire me</a>
-                        <div class="clearfix visible-xxs"></div>
-                        <a href="#portfolio" class="btn btn-border">Explore more</a>
-                    </div>
-                </div>
-            
-                <div class="col-md-6 text-right">
-                    <img src="assets/img/alex-vidal.png" alt="alex-vidal"/>
-                </div>
+              <AnchorLink className="btn btn-fill " href="#contact">
+                Contact
+              </AnchorLink>
+              <div className="clearfix visible-xxs"></div>
 
+              <AnchorLink className="btn btn-border" href="#portfolio">
+                Explore more
+              </AnchorLink>
             </div>
+          </div>
+
+          <div className="col-md-6 text-right">
+            <img src="assets/img/alex-vidal.png" alt="alex-vidal" />
+          </div>
         </div>
+      </div>
     </div>
-    )
+  );
 }

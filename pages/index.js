@@ -1,28 +1,26 @@
-import Head from 'next/head'
-import Header from "../components/Header"
-import Hero from "../components/Hero"
-import WhatIDo from "../components/WhatIDo"
-import Portfolio from "../components/Portfolio"
-import Experience from "../components/Experience"
-import Footer from '../components/Footer'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Contact from '../components/Contact'
-import { useEffect, useState } from 'react'
-
+import Head from "next/head";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import WhatIDo from "../components/WhatIDo";
+import Portfolio from "../components/Portfolio";
+import Experience from "../components/Experience";
+import Footer from "../components/Footer";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [clientWindowHeight, setClientWindowHeight] = useState({})
+  const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  })
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
-const handleScroll = () => {
-    setClientWindowHeight(window.scrollY)
-  }
-
+  const handleScroll = () => {
+    setClientWindowHeight(window.scrollY);
+  };
 
   return (
     <div>
@@ -32,19 +30,17 @@ const handleScroll = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header clientWindowHeight={clientWindowHeight}/>
-      <Hero/>
-      <main id="main" class="site-main">
-        <About/>
-        <Skills/>
-        <WhatIDo/>
-        <Portfolio/>
-        <Experience/>
-        <Contact/>
-
-
+      <Header clientWindowHeight={clientWindowHeight} />
+      <Hero />
+      <main id="main" className="site-main">
+        <About />
+        <Skills />
+        <WhatIDo />
+        <Portfolio />
+        <Experience />
+        <Contact />
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
